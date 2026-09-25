@@ -6,7 +6,7 @@
 
 *for the Mesh Republic*
 
-Version 1.0  —  February 2026
+Version 1.0, February 2026
 
 Primary Author: Lee Hansen
 
@@ -14,7 +14,7 @@ License: GNU Affero General Public License v3.0 (AGPL-3.0)
 
 Repository: github.com/mesh-republic/fractal-id
 
-Parent Project: The Mesh Republic  —  github.com/mesh-republic/whitepaper
+Parent Project: The Mesh Republic, github.com/meshrepublic/mesh-republic-whitepaper
 
 *"Identity is not a document. It is a pattern."*
 
@@ -23,9 +23,9 @@ Parent Project: The Mesh Republic  —  github.com/mesh-republic/whitepaper
 
 # **Abstract**
 
-Autonym is a self-sovereign identity system in which every citizen is their own Certificate Authority. Identity is not granted by a central institution and cannot be revoked by one. Instead, identity emerges from the accumulated weight of a continuously growing web of mutual validation — behavioral continuity, relationship attestations, economic presence, and community participation — anchored cryptographically to the Bitcoin blockchain and verified through zero-knowledge proofs.
+Autonym is a self-sovereign identity system in which every citizen is their own Certificate Authority. Identity is not granted by a central institution and cannot be revoked by one. Instead, identity emerges from the accumulated weight of a continuously growing web of mutual validation, behavioral continuity, relationship attestations, economic presence, and community participation, anchored cryptographically to the Bitcoin blockchain and verified through zero-knowledge proofs.
 
-This paper specifies the Autonym architecture: its philosophical foundations, cryptographic primitives, trust propagation model, Sybil resistance mechanism, integration with the Kudzu biomimetic memory system, and its bootstrapping strategy from within existing legacy identity infrastructure. Autonym is not a replacement imposed from outside — it is a parallel system that demonstrates superior properties and displaces legacy identity by competitive merit.
+This paper specifies the Autonym architecture: its philosophical foundations, cryptographic primitives, trust propagation model, Sybil resistance mechanism, integration with the Kudzu biomimetic memory system, and its bootstrapping strategy from within existing legacy identity infrastructure. Autonym is not a replacement imposed from outside; it is a parallel system that demonstrates superior properties and displaces legacy identity by competitive merit.
 
 # **1\. The Identity Inversion Problem**
 
@@ -39,7 +39,7 @@ A person who is well-known in their town is known regardless of whether their wa
 
 Modern state identity systems inverted this natural order. They declared: "You are not who your community knows you to be. You are who we, the central authority, declare you to be. Your identity flows downward from our stamp, not upward from your relationships."
 
-This inversion was accepted because it was convenient and because it scaled trust to strangers in contexts where organic trust networks did not exist. But the inversion created a catastrophic structural vulnerability: a single point of failure and a single point of control. Lose your government ID and you become a non-person — not because your community stopped knowing you, but because the central authority stopped acknowledging you.
+This inversion was accepted because it was convenient and because it scaled trust to strangers in contexts where organic trust networks did not exist. But the inversion created a catastrophic structural vulnerability: a single point of failure and a single point of control. Lose your government ID and you become a non-person, not because your community stopped knowing you, but because the central authority stopped acknowledging you.
 
 This is not a hypothetical risk. It is an operational risk exercised routinely: against dissidents, against refugees, against minorities, against anyone who inconveniences a centralized power structure.
 
@@ -47,7 +47,7 @@ This is not a hypothetical risk. It is an operational risk exercised routinely: 
 
 Autonym re-inverts identity back to its natural state. It returns identity authority to the distributed web of relationships that has always constituted identity in practice, while using the legacy system's own records as inputs rather than authorities.
 
-The government ID does not disappear — it becomes one data point among thousands. The utility bill does not disappear — it contributes a thread of evidence. The employment record, the marriage certificate, the family relationship, the continuous behavioral signature of a mobile device: all of these become threads in a rope that no single institution can cut.
+The government ID does not disappear; it becomes one data point among thousands. The utility bill does not disappear; it contributes a thread of evidence. The employment record, the marriage certificate, the family relationship, the continuous behavioral signature of a mobile device: all of these become threads in a rope that no single institution can cut.
 
 # **2\. Core Principles**
 
@@ -69,7 +69,7 @@ A citizen can prove the existence and strength of their identity without reveali
 
 **2.5 Legacy Systems Are Inputs, Not Authorities**
 
-Existing record infrastructure — government databases, utility records, employment verification, financial history — is treated as evidence that can strengthen a Autonym but cannot constitute or negate one. The legacy system contributes to the rope; it does not hold the scissors.
+Existing record infrastructure, government databases, utility records, employment verification, financial history, is treated as evidence that can strengthen a Autonym but cannot constitute or negate one. The legacy system contributes to the rope; it does not hold the scissors.
 
 **2.6 The System Emerges from Within**
 
@@ -88,7 +88,7 @@ Identity is established through multiple independent evidence streams called val
 
 ## **4.1 Device Continuity Thread**
 
-Every citizen's mobile device generates a continuous behavioral record: movement patterns, interaction timing, application usage, typing cadence, magnetic signature, accelerometer profiles, and geolocation continuity. This record is processed locally on-device into a zero-knowledge behavioral proof — the raw data never leaves the device.
+Every citizen's mobile device generates a continuous behavioral record: movement patterns, interaction timing, application usage, typing cadence, magnetic signature, accelerometer profiles, and geolocation continuity. This record is processed locally on-device into a zero-knowledge behavioral proof, the raw data never leaves the device.
 
 The behavioral proof answers: "Is this the same continuous individual who has been operating this device over an extended period?" It is tamper-evident because behavioral patterns are deeply individual and extremely difficult to fake continuously. You cannot sell your behavioral continuity the way you can sell a government document.
 
@@ -98,7 +98,7 @@ Government-issued identity documents contribute to a Autonym as evidence, not au
 
 ## **4.3 Economic Presence Thread**
 
-Continuous economic participation — utility bill payments, rent payments, subscription services, tax filings, employment payroll records — constitutes strong evidence of ongoing presence and economic activity. This thread is difficult to fake at scale because it requires real resources, and it is generated by third parties with independent incentives to maintain accurate records.
+Continuous economic participation, utility bill payments, rent payments, subscription services, tax filings, employment payroll records, constitutes strong evidence of ongoing presence and economic activity. This thread is difficult to fake at scale because it requires real resources, and it is generated by third parties with independent incentives to maintain accurate records.
 
 ## **4.4 Relationship Graph Thread**
 
@@ -110,7 +110,7 @@ Participation in governance, voluntary organizations, trade associations, neighb
 
 ## **4.6 Biometric Continuity Thread**
 
-Physical biometrics — fingerprint, facial geometry, iris pattern, voice signature — contribute to identity continuity when voluntarily enrolled. Autonym biometric data is stored locally in a cryptographic commitment that allows zero-knowledge proof of biometric match without transmitting the biometric itself. Biometric threads are strong but not required.
+Physical biometrics, fingerprint, facial geometry, iris pattern, voice signature, contribute to identity continuity when voluntarily enrolled. Autonym biometric data is stored locally in a cryptographic commitment that allows zero-knowledge proof of biometric match without transmitting the biometric itself. Biometric threads are strong but not required.
 
 # **5\. The Rope Metaphor: Composing Certainty from Uncertainty**
 
@@ -118,7 +118,7 @@ Physical biometrics — fingerprint, facial geometry, iris pattern, voice signat
 
 A single thread is insufficient to establish identity and insufficient to destroy it. The combination of many threads forms a rope whose strength is the product of its composition. No single cut is fatal. An adversary who steals your government ID has cut one thread. The rope continues to hold because the remaining threads are independently sufficient for the required confidence level.
 
-This is the inverse of the legacy system, where a single revocation — a citizenship stripping, a platform ban, a bank account freeze — can sever the identity entirely.
+This is the inverse of the legacy system, where a single revocation, a citizenship stripping, a platform ban, a bank account freeze, can sever the identity entirely.
 
 ## **5.2 Confidence Thresholds**
 
@@ -164,11 +164,11 @@ When more information is genuinely necessary, citizens can selectively disclose 
 
 ## **7.1 Chain Structure**
 
-Each Autonym is an append-only cryptographic chain. Every attestation received or issued is hashed with the prior attestation's hash in chronological sequence — identical in structure to how each Bitcoin block encodes its predecessor. The chain is anchored to the Bitcoin blockchain periodically.
+Each Autonym is an append-only cryptographic chain. Every attestation received or issued is hashed with the prior attestation's hash in chronological sequence, identical in structure to how each Bitcoin block encodes its predecessor. The chain is anchored to the Bitcoin blockchain periodically.
 
 ## **7.2 The Longest Valid Chain Wins**
 
-When two identity records conflict — for example, if an adversary attempts to construct a parallel identity chain using stolen credentials — the resolution mechanism is: the longest valid chain wins.
+When two identity records conflict, for example, if an adversary attempts to construct a parallel identity chain using stolen credentials, the resolution mechanism is: the longest valid chain wins.
 
 "Longest" is measured by a weighted function of: chronological depth, thread diversity, attestation weight, behavioral continuity, and economic evidence. A legitimate citizen who has been continuously accumulating their identity for years will have a chain that an adversary cannot plausibly replicate retroactively. Historical depth cannot be faked cheaply.
 
@@ -213,7 +213,7 @@ Each has a real cost. Multiplying by the number of fake identities needed to mea
 
 ## **9.2 The Dynamic Key Property**
 
-A citizen's Autonym private key is dynamic — it evolves continuously based on behavioral continuity inputs. Even if an adversary obtains a point-in-time copy of a citizen's key material, that material becomes stale quickly. The legitimate citizen's continuously evolving key diverges from the stolen snapshot. Making long-term impersonation effectively impossible without being the legitimate citizen.
+A citizen's Autonym private key is dynamic; it evolves continuously based on behavioral continuity inputs. Even if an adversary obtains a point-in-time copy of a citizen's key material, that material becomes stale quickly. The legitimate citizen's continuously evolving key diverges from the stolen snapshot. Making long-term impersonation effectively impossible without being the legitimate citizen.
 
 # **10\. Kudzu Integration: Persistent Associative Memory**
 
@@ -221,7 +221,7 @@ A citizen's Autonym private key is dynamic — it evolves continuously based on 
 
 A static identity document does not learn. A Autonym, by contrast, is a living record that accumulates context over time. The Kudzu biomimetic memory system provides the storage and retrieval substrate for this accumulation.
 
-Kudzu's holographic reduced representation (HRR) architecture — 512-dimensional vectors binding role-filler pairs through circular convolution — allows a Autonym's contextual associations to be stored efficiently and retrieved associatively. The identity does not merely know facts about the citizen; it knows relationships between facts.
+Kudzu's holographic reduced representation (HRR) architecture, 512-dimensional vectors binding role-filler pairs through circular convolution, allows a Autonym's contextual associations to be stored efficiently and retrieved associatively. The identity does not merely know facts about the citizen; it knows relationships between facts.
 
 ## **10.2 Kudzu as Identity Memory Layer**
 
@@ -229,7 +229,7 @@ In the Autonym architecture, a Kudzu hologram acts as the citizen's identity mem
 
 ## **10.3 The Self-Sovereign Memory Property**
 
-Because Kudzu requires no external API dependencies — all computation runs in pure Elixir using its own HRR math — a citizen's identity memory is entirely self-contained. There is no cloud service that stores your identity context. There is no third party that can be served a subpoena for your identity data. The citizen's Kudzu instance runs on their device. The identity lives where the citizen lives.
+Because Kudzu requires no external API dependencies, all computation runs in pure Elixir using its own HRR math, a citizen's identity memory is entirely self-contained. There is no cloud service that stores your identity context. There is no third party that can be served a subpoena for your identity data. The citizen's Kudzu instance runs on their device. The identity lives where the citizen lives.
 
 # **11\. Bootstrapping from the Legacy System**
 
@@ -239,7 +239,7 @@ Autonym does not require the dismantling of legacy identity infrastructure. It i
 
 ## **11.2 Legacy Records as Bootstrap Inputs**
 
-When a new citizen registers a Autonym, they can strengthen their initial chain by importing verifiable attestations from legacy systems: government ID cryptographic hash, utility account verification, employment verification, financial institution attestation, and professional licensing. Each legacy institution participates as a corporate CA — attesting to facts they already verify — without changing their existing operations.
+When a new citizen registers a Autonym, they can strengthen their initial chain by importing verifiable attestations from legacy systems: government ID cryptographic hash, utility account verification, employment verification, financial institution attestation, and professional licensing. Each legacy institution participates as a corporate CA, attesting to facts they already verify, without changing their existing operations.
 
 ## **11.3 The DMV Beachhead Strategy**
 
@@ -247,13 +247,13 @@ The optimal entry point for Autonym is the identity verification function curren
 
 ## **11.4 The Surveillance Infrastructure Judo**
 
-Legacy surveillance infrastructure — the extensive data collection apparatus of commercial entities, financial institutions, and government agencies — becomes a source of identity strength rather than a threat. A citizen who has years of utility payments, tax records, and financial transactions has strong economic presence evidence available to bootstrap their Autonym. The judo principle: use the adversary's strength against them.
+Legacy surveillance infrastructure, the extensive data collection apparatus of commercial entities, financial institutions, and government agencies, becomes a source of identity strength rather than a threat. A citizen who has years of utility payments, tax records, and financial transactions has strong economic presence evidence available to bootstrap their Autonym. The judo principle: use the adversary's strength against them.
 
 # **12\. Edge Cases and Inclusion**
 
 ## **12.1 Recent Immigrants**
 
-New arrivals use bootstrap threads from their country of origin — foreign government documents, international employment records, family attestations from network members — to provide initial chain depth. The cost structure prevents bad actors from manufacturing false newcomer identities at scale.
+New arrivals use bootstrap threads from their country of origin, foreign government documents, international employment records, family attestations from network members, to provide initial chain depth. The cost structure prevents bad actors from manufacturing false newcomer identities at scale.
 
 ## **12.2 Domestic Abuse Survivors and Witnesses**
 
@@ -261,15 +261,15 @@ Individuals who need to sever their visible identity can establish a new Autonym
 
 ## **12.3 Whistleblowers**
 
-The ZKP layer handles this directly: proof of personhood without identity revelation. A whistleblower can prove they have a deep, legitimate Autonym — demonstrating they are not a bot, not a foreign agent, not a synthetic identity — without revealing who they are.
+The ZKP layer handles this directly: proof of personhood without identity revelation. A whistleblower can prove they have a deep, legitimate Autonym, demonstrating they are not a bot, not a foreign agent, not a synthetic identity, without revealing who they are.
 
 # **13\. Bitcoin Anchoring**
 
 Autonym identity chains require periodic anchoring to an immutable external timestamp source to prevent retroactive chain construction. Bitcoin provides the most secure available immutable timestamp through its proof-of-work chain.
 
-The Autonym system uses Bitcoin's OP\_RETURN opcode to embed identity chain root hashes in Bitcoin transactions at periodic intervals. Identity chains are anchored at genesis, annually at minimum, at significant attestation milestones, and on demand for high-stakes applications.
+Identity chain root hashes are aggregated into the Mesh Republic's checkpoint Merkle root and committed to Bitcoin alongside the Republic's governance records; a single Bitcoin transaction therefore anchors any number of identity chains, making dense anchoring essentially free. Checkpoint cadence follows the security ratchet defined in Section 4.4.7 of the Mesh Republic whitepaper: dense during bootstrap, relaxing only as sustained network security crosses measured thresholds, densifying automatically if security falls, with a constitutional floor of one anchor per year. Chains are additionally anchored at genesis, at significant attestation milestones, and on demand for high-stakes applications. Standalone Autonym deployments outside the Republic anchor their own aggregated roots directly using Bitcoin's OP\_RETURN opcode, under the same cadence rules.
 
-Bitcoin anchoring fees create a cost per identity that is small for legitimate citizens but significant at the scale required for a meaningful Sybil attack. This is the same economic deterrence principle as Bitcoin's own Sybil resistance.
+Sybil resistance does not depend on anchoring fees. The cost of forging identities is the cost of accumulating and maintaining the validation threads themselves (Section 9); anchoring's role is to make whatever history exists unforgeable in retrospect. An attacker cannot retroactively construct a deep chain, because depth is measured against Bitcoin timestamps that no one can rewrite.
 
 # **14\. Governance and Constitutional Constraints**
 
@@ -279,15 +279,20 @@ Autonym operates within the Mesh Republic's constitutional AI framework. Identit
 
 * **Non-surveillance:** An identity hologram cannot report a citizen's activities to any external party without explicit citizen authorization
 
-* **Non-coercion:** An identity hologram cannot be operated under duress — it detects coercion signals and activates duress protocols
+* **Non-coercion:** An identity hologram cannot be operated under duress; it detects coercion signals and activates duress protocols
 
 * **Minimal disclosure:** An identity hologram defaults to minimum necessary disclosure and requires explicit citizen consent for additional disclosure
 
 * **Portability:** A citizen can always export their complete identity chain and migrate it to a different implementation
 
+* **Non-transferability:** An Autonym is soulbound to its human. It cannot be sold, transferred, inherited, or reassigned; not by its holder, not by any organization, and not by any governance vote. A transferable identity is an account, not an identity. This constraint is absolute.
+
 ## **14.2 Autonym in Mesh Republic Governance**
 
 Autonym provides the Sybil-resistant personhood layer that makes one-person-one-vote governance meaningful. Without strong identity, any voting system is vulnerable to identity multiplication attacks. Autonym enables weighted governance participation proportional to identity depth, quadratic voting with Sybil resistance, and auditable delegation through the relationship graph.
+
+
+Each Autonym is its own root certificate authority; trust originates at the citizen and composes outward. Organizations hold composed identities of their own: an organization is a threshold composition of its members' Autonyms, a group of certificate authorities acting as one signer. Composed identities carry full powers of agency (signing, contracting, holding assets, issuing attestations) and zero powers of citizenship: they do not vote, and they do not mint. Certification composes; personhood does not. Two citizens forming an organization create a new signer, never a new soul. Corporate personhood is rejected at the protocol level.
 
 # **15\. Comparison to Existing Systems**
 
@@ -314,11 +319,11 @@ Existing Self-Sovereign Identity (SSI) proposals such as DID and Verifiable Cred
 
 # **17\. Conclusion**
 
-The central authority model of identity has served a useful purpose in a world where strangers needed to trust each other quickly and organic trust networks did not exist across large distances. But it solved the coordination problem by creating a single point of failure and a single point of control — and those structural vulnerabilities are now being exploited routinely by state and corporate actors against the citizens they were meant to serve.
+The central authority model of identity has served a useful purpose in a world where strangers needed to trust each other quickly and organic trust networks did not exist across large distances. But it solved the coordination problem by creating a single point of failure and a single point of control, and those structural vulnerabilities are now being exploited routinely by state and corporate actors against the citizens they were meant to serve.
 
-Autonym does not require the legacy system to fail before it can work. It requires only that a critical mass of citizens begin building their identity ropes — accumulating threads, making attestations, establishing behavioral continuity — in parallel with their legacy documents. Over time, the rope becomes stronger than the document. At that point, the document becomes redundant not because anyone took it away, but because it was outcompeted.
+Autonym does not require the legacy system to fail before it can work. It requires only that a critical mass of citizens begin building their identity ropes, accumulating threads, making attestations, establishing behavioral continuity, in parallel with their legacy documents. Over time, the rope becomes stronger than the document. At that point, the document becomes redundant not because anyone took it away, but because it was outcompeted.
 
-This is how the Mesh Republic spreads: not through revolution, but through demonstrated superiority. Like mycelium, like Linux, like Bitcoin — one community at a time, one service at a time, until the day arrives when the legacy system must interoperate with the new one rather than the other way around.
+This is how the Mesh Republic spreads: not through revolution, but through demonstrated superiority. Like mycelium, like Linux, like Bitcoin, one community at a time, one service at a time, until the day arrives when the legacy system must interoperate with the new one rather than the other way around.
 
 ***Identity is not a document. It is a pattern. Autonym makes the pattern sovereign.***
 
@@ -352,10 +357,10 @@ Initial suggested weights (subject to empirical calibration through deployment):
 
 # **Appendix C: Relation to The Mesh Republic Whitepaper**
 
-Autonym is a component of the larger Mesh Republic framework. The full framework specification — including the Layer 2 Bitcoin governance token, Kudzu biomimetic constitutional AI, Antitrust 2.0 enforcement mechanisms, and philosophical foundations — is available at:
+Autonym is a component of the larger Mesh Republic framework. The full framework specification, including Mandelbrots, the Bitcoin-anchored governance token, Kudzu biomimetic constitutional AI, Antitrust 2.0 enforcement mechanisms, and philosophical foundations, is available at:
 
-**github.com/mesh-republic/whitepaper**
+**github.com/meshrepublic/mesh-republic-whitepaper**
 
-Autonym can be deployed independently of the full Mesh Republic framework. It requires only Bitcoin for anchoring and a compatible Kudzu instance for memory. Full governance integration requires the Mesh Republic governance token layer.
+Autonym can be deployed independently of the full Mesh Republic framework. It requires only Bitcoin for anchoring and a compatible Kudzu instance for memory. Full governance integration requires the Mandelbrots governance layer.
 
 *This document is a living specification. Contributions, critiques, and implementations are welcome under the terms of the AGPL-3.0 license.*
