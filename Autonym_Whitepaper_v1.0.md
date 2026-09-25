@@ -215,6 +215,36 @@ Each has a real cost. Multiplying by the number of fake identities needed to mea
 
 A citizen's Autonym private key is dynamic; it evolves continuously based on behavioral continuity inputs. Even if an adversary obtains a point-in-time copy of a citizen's key material, that material becomes stale quickly. The legitimate citizen's continuously evolving key diverges from the stolen snapshot. Making long-term impersonation effectively impossible without being the legitimate citizen.
 
+## **9.3 The Enrollment Oracle**
+
+Every mechanism in this paper, and every economic mechanism in the Mesh Republic whitepaper, ultimately rests on a single gate: when an Autonym first crosses the validation threshold and presents its first claim, who or what vouched that exactly one living human stands behind it, and what would it have cost to make that vouching false? This gate is the enrollment oracle. It decomposes into four questions with four different answers: humanness, uniqueness, liveness, and genesis.
+
+**Humanness.** Is there a real person here? The validation thread model of Sections 4 and 5 answers this directly: six independent evidence strands, composed into a rope whose confidence exceeds any single strand. Humanness is the problem this architecture was built for, and no additional machinery is required.
+
+**Uniqueness and the Rope-Splitting Attack.** Does this person hold exactly one Autonym? This is the harder question, because validation threads measure depth, not exclusivity. A real human can attempt to grow two ropes by partitioning a real life: one device history on each of two phones, work relationships attested to one identity and neighborhood relationships to the other, two economic trails. Every signal is genuine; only the routing is dishonest. Against the identity system alone this attack is self-defeating, since two partial ropes are simply two weaker identities. It becomes profitable only at the mint, because the citizen stream pays per rope. The enrollment oracle exists to make that profit unreachable.
+
+**Bootstrap: Exclusive Claim on Legacy Credentials.** During the Republic's early life, uniqueness leans on deduplication the legacy world has already paid for. A government identity document, a passport, a national identity number, represents billions of dollars of existing infrastructure whose sole purpose is ensuring one credential per person. Each legacy document may seed exactly one Autonym: the document's identifier is consumed into a global claim set through a per-document nullifier, proven in zero knowledge so the document itself is never disclosed and never stored. This is the surveillance infrastructure judo of Section 11.4 made load-bearing: the legacy system's own deduplication becomes the Republic's bootstrap Sybil defense. Two safeguards apply. Per-issuer weight is capped, so a hostile or corrupted issuer minting fraudulent credentials cannot flood the identity set. And the document path is never mandatory: the edge-case populations of Section 12 retain full document-free enrollment through the ceremony and attestation paths below.
+
+**Steady State: Ceremonies and Staked Attestation.** Legacy credentials taper as native mechanisms deepen. The first native mechanism is the enrollment ceremony: periodic, simultaneous, local gatherings at which attendees mutually attest one another's presence. Physical simultaneity is the one uniqueness proof no cryptography can counterfeit; a body occupies one place at a time, and a citizen cannot attend two ceremonies at once. Citizenship in a mesh republic is conferred where the mesh lives, at a gathering of neighbors. The second mechanism is staked attestation: vouching for an Autonym's threads places the attestor's own reputation and brots at stake. When evidence collision later reveals a duplicate, the same document surfacing in two ropes, the same device continuity feeding two identities, ceremony attendance records that conflict, the duplicate ropes are merged, and every attestor who fed both is slashed. Because evidence is anchored immutably (Section 13), a successful duplication is not a single lie but a conspiracy that must remain undiscovered forever against a permanent record.
+
+**The Enrollment Ratchet.** The oracle's calibration is economic and self-adjusting. The claiming threshold is set so that the cost of growing a second rope to claiming depth exceeds the net present value of the stream it would steal. That value is finite and computable: a stream of m brots per year discounts to roughly m divided by the prevailing discount rate, reduced further by demurrage on any accumulation, so the prize is bounded by construction while the forging cost rises with required depth. The threshold is dynamic in the manner of the anchoring ratchet: measured duplicate-detection rates adjust required depth automatically, with no vote in the loop. Rising fraud raises the bar; sustained clean epochs relax it toward a constitutional floor.
+
+**Liveness.** Streams terminate at death, so the system must observe death without surveilling life. The claim proof itself is the pulse: each epoch claim carries fresh device-continuity and biometric-continuity evidence, locally held and consumed in zero knowledge. Missed epochs pause the stream rather than banking it, so there is no posthumous accrual and no incentive to conceal a death. Community death attestation closes the identity formally; minted balances pass by ordinary inheritance, and the stream itself passes to no one.
+
+**Genesis.** Before a web of trust exists, someone must attest the first attestors. The Republic handles founders the way honest constitutions do: a publicly documented founding ceremony whose participants hold elevated attestation weight that is time-boxed and expires automatically. The founder problem is real in every network's history; the Republic's answer is to make it explicitly temporary rather than quietly permanent (Section 14.1).
+
+**What the Oracle Refuses.** The enrollment oracle does not and may not maintain a global biometric index. One database of every citizen's iris or face is the panopticon this system exists to reject, and it would contradict the thread model's central thesis: that certainty composes from many weak, local, revocable signals rather than one totalizing strong one. Biometric continuity remains what Section 4.6 defines, one thread among six, held on the citizen's own device, consumed only as zero-knowledge attestations, and never aggregated.
+
+**Attack Surface Summary.**
+
+| Attack | Mechanism | What Defeats It |
+| :---- | :---- | :---- |
+| Rope splitting | One human partitions real signals into two identities | Exclusive legacy-document claim; ceremony simultaneity; attestor slashing on merge; threshold above stream NPV |
+| Synthetic person | Fully fabricated identity | Cost of forging six independent thread types exceeds bounded prize (Section 9.1) |
+| Identity rental | Paying a real citizen to claim on one's behalf | Claims non-delegable; small per-epoch amounts; duress protocols (Section 14.1) |
+| Issuer poisoning | Corrupt credential issuer mints fake documents | Per-issuer weight caps; cross-thread corroboration; taper toward native mechanisms |
+| Posthumous farming | Claiming for the dead | Claim-as-liveness-pulse; missed epochs pause; community death attestation |
+
 # **10\. Kudzu Integration: Persistent Associative Memory**
 
 ## **10.1 Why Identity Needs Memory**
@@ -286,6 +316,8 @@ Autonym operates within the Mesh Republic's constitutional AI framework. Identit
 * **Portability:** A citizen can always export their complete identity chain and migrate it to a different implementation
 
 * **Non-transferability:** An Autonym is soulbound to its human. It cannot be sold, transferred, inherited, or reassigned; not by its holder, not by any organization, and not by any governance vote. A transferable identity is an account, not an identity. This constraint is absolute.
+
+* **Founder Sunset:** Elevated attestation weight held by genesis-ceremony participants expires automatically at a constitutionally fixed epoch and may not be renewed or transferred by any governance action.
 
 ## **14.2 Autonym in Mesh Republic Governance**
 
