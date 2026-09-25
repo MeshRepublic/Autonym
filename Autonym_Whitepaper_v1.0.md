@@ -1,6 +1,6 @@
 
 
-**FRACTAL ID**
+**Autonym**
 
 *A Self-Sovereign Identity System*
 
@@ -23,9 +23,9 @@ Parent Project: The Mesh Republic  —  github.com/mesh-republic/whitepaper
 
 # **Abstract**
 
-Fractal ID is a self-sovereign identity system in which every citizen is their own Certificate Authority. Identity is not granted by a central institution and cannot be revoked by one. Instead, identity emerges from the accumulated weight of a continuously growing web of mutual validation — behavioral continuity, relationship attestations, economic presence, and community participation — anchored cryptographically to the Bitcoin blockchain and verified through zero-knowledge proofs.
+Autonym is a self-sovereign identity system in which every citizen is their own Certificate Authority. Identity is not granted by a central institution and cannot be revoked by one. Instead, identity emerges from the accumulated weight of a continuously growing web of mutual validation — behavioral continuity, relationship attestations, economic presence, and community participation — anchored cryptographically to the Bitcoin blockchain and verified through zero-knowledge proofs.
 
-This paper specifies the Fractal ID architecture: its philosophical foundations, cryptographic primitives, trust propagation model, Sybil resistance mechanism, integration with the Kudzu biomimetic memory system, and its bootstrapping strategy from within existing legacy identity infrastructure. Fractal ID is not a replacement imposed from outside — it is a parallel system that demonstrates superior properties and displaces legacy identity by competitive merit.
+This paper specifies the Autonym architecture: its philosophical foundations, cryptographic primitives, trust propagation model, Sybil resistance mechanism, integration with the Kudzu biomimetic memory system, and its bootstrapping strategy from within existing legacy identity infrastructure. Autonym is not a replacement imposed from outside — it is a parallel system that demonstrates superior properties and displaces legacy identity by competitive merit.
 
 # **1\. The Identity Inversion Problem**
 
@@ -43,9 +43,9 @@ This inversion was accepted because it was convenient and because it scaled trus
 
 This is not a hypothetical risk. It is an operational risk exercised routinely: against dissidents, against refugees, against minorities, against anyone who inconveniences a centralized power structure.
 
-## **1.3 The Fractal ID Re-Inversion**
+## **1.3 The Autonym Re-Inversion**
 
-Fractal ID re-inverts identity back to its natural state. It returns identity authority to the distributed web of relationships that has always constituted identity in practice, while using the legacy system's own records as inputs rather than authorities.
+Autonym re-inverts identity back to its natural state. It returns identity authority to the distributed web of relationships that has always constituted identity in practice, while using the legacy system's own records as inputs rather than authorities.
 
 The government ID does not disappear — it becomes one data point among thousands. The utility bill does not disappear — it contributes a thread of evidence. The employment record, the marriage certificate, the family relationship, the continuous behavioral signature of a mobile device: all of these become threads in a rope that no single institution can cut.
 
@@ -53,7 +53,7 @@ The government ID does not disappear — it becomes one data point among thousan
 
 **2.1 Every Citizen Is Their Own Certificate Authority**
 
-There is no root CA. Every Fractal ID participant generates their own cryptographic keypair and issues their own identity attestations. Their identity is the accumulation of their attestations and the attestations of others who know them.
+There is no root CA. Every Autonym participant generates their own cryptographic keypair and issues their own identity attestations. Their identity is the accumulation of their attestations and the attestations of others who know them.
 
 **2.2 Trust Flows Upward, Not Downward**
 
@@ -69,15 +69,15 @@ A citizen can prove the existence and strength of their identity without reveali
 
 **2.5 Legacy Systems Are Inputs, Not Authorities**
 
-Existing record infrastructure — government databases, utility records, employment verification, financial history — is treated as evidence that can strengthen a Fractal ID but cannot constitute or negate one. The legacy system contributes to the rope; it does not hold the scissors.
+Existing record infrastructure — government databases, utility records, employment verification, financial history — is treated as evidence that can strengthen a Autonym but cannot constitute or negate one. The legacy system contributes to the rope; it does not hold the scissors.
 
 **2.6 The System Emerges from Within**
 
-Fractal ID does not require the legacy system to be dismantled before it can function. It is designed to operate in parallel and to displace legacy identity by competitive merit.
+Autonym does not require the legacy system to be dismantled before it can function. It is designed to operate in parallel and to displace legacy identity by competitive merit.
 
 # **3\. Architecture Overview**
 
-A Fractal ID consists of four layers:
+A Autonym consists of four layers:
 
 | ┌──────────────────────────────────────────────────┐ │  LAYER 4: ZERO-KNOWLEDGE PROOF PRESENTATION             │ │  Prove identity strength without revealing contents      │ ├──────────────────────────────────────────────────┤ │  LAYER 3: IDENTITY CHAIN                                │ │  Chronological hash chain of attestations               │ │  Anchored to Bitcoin blockchain                          │ ├──────────────────────────────────────────────────┤ │  LAYER 2: TRUST GRAPH                                   │ │  Weighted graph of mutual attestations                   │ │  Propagates through social network                       │ ├──────────────────────────────────────────────────┤ │  LAYER 1: VALIDATION THREADS                            │ │  Individual evidence streams: behavioral, relational,    │ │  economic, institutional, biometric                      │ └──────────────────────────────────────────────────┘ |
 | :---- |
@@ -94,7 +94,7 @@ The behavioral proof answers: "Is this the same continuous individual who has be
 
 ## **4.2 Legacy Document Thread**
 
-Government-issued identity documents contribute to a Fractal ID as evidence, not authority. The document attests that at some point, a government institution believed this person existed with these attributes. Legacy documents are strong bootstrap evidence but weak ongoing evidence. They can be forged, stolen, or revoked. Their contribution to the identity rope decreases over time relative to threads that generate continuous evidence.
+Government-issued identity documents contribute to a Autonym as evidence, not authority. The document attests that at some point, a government institution believed this person existed with these attributes. Legacy documents are strong bootstrap evidence but weak ongoing evidence. They can be forged, stolen, or revoked. Their contribution to the identity rope decreases over time relative to threads that generate continuous evidence.
 
 ## **4.3 Economic Presence Thread**
 
@@ -102,7 +102,7 @@ Continuous economic participation — utility bill payments, rent payments, subs
 
 ## **4.4 Relationship Graph Thread**
 
-Every person who knows the citizen can sign their identity with their own Fractal ID CA. The value of an attestation depends on the strength of the attesting identity. An attestation from a citizen with a deep, long-established Fractal ID carries more weight than one from a newly registered participant. This is the fractal property: the identity web is self-similar at every scale.
+Every person who knows the citizen can sign their identity with their own Autonym CA. The value of an attestation depends on the strength of the attesting identity. An attestation from a citizen with a deep, long-established Autonym carries more weight than one from a newly registered participant. This is the fractal property: the identity web is self-similar at every scale.
 
 ## **4.5 Community Participation Thread**
 
@@ -110,7 +110,7 @@ Participation in governance, voluntary organizations, trade associations, neighb
 
 ## **4.6 Biometric Continuity Thread**
 
-Physical biometrics — fingerprint, facial geometry, iris pattern, voice signature — contribute to identity continuity when voluntarily enrolled. Fractal ID biometric data is stored locally in a cryptographic commitment that allows zero-knowledge proof of biometric match without transmitting the biometric itself. Biometric threads are strong but not required.
+Physical biometrics — fingerprint, facial geometry, iris pattern, voice signature — contribute to identity continuity when voluntarily enrolled. Autonym biometric data is stored locally in a cryptographic commitment that allows zero-knowledge proof of biometric match without transmitting the biometric itself. Biometric threads are strong but not required.
 
 # **5\. The Rope Metaphor: Composing Certainty from Uncertainty**
 
@@ -132,7 +132,7 @@ This is the inverse of the legacy system, where a single revocation — a citize
 
 ## **5.3 Temporal Dynamics**
 
-The rope strengthens over time. A newly registered Fractal ID consists of bootstrap threads and is relatively weak. As the citizen accumulates months and years of behavioral continuity, relationship attestations, and economic presence, the rope grows stronger. Attacking a long-established identity is much harder than attacking a new one. The cost of constructing a fake identity with deep history is prohibitive.
+The rope strengthens over time. A newly registered Autonym consists of bootstrap threads and is relatively weak. As the citizen accumulates months and years of behavioral continuity, relationship attestations, and economic presence, the rope grows stronger. Attacking a long-established identity is much harder than attacking a new one. The cost of constructing a fake identity with deep history is prohibitive.
 
 # **6\. Zero-Knowledge Identity Proof**
 
@@ -142,7 +142,7 @@ A citizen should be able to prove they are who they claim to be without revealin
 
 ## **6.2 What Can Be Proven Without Disclosure**
 
-Using ZKP constructions (zk-SNARKs or zk-STARKs), a Fractal ID holder can prove:
+Using ZKP constructions (zk-SNARKs or zk-STARKs), a Autonym holder can prove:
 
 * **Proof of personhood:** I am a unique, validated human
 
@@ -164,7 +164,7 @@ When more information is genuinely necessary, citizens can selectively disclose 
 
 ## **7.1 Chain Structure**
 
-Each Fractal ID is an append-only cryptographic chain. Every attestation received or issued is hashed with the prior attestation's hash in chronological sequence — identical in structure to how each Bitcoin block encodes its predecessor. The chain is anchored to the Bitcoin blockchain periodically.
+Each Autonym is an append-only cryptographic chain. Every attestation received or issued is hashed with the prior attestation's hash in chronological sequence — identical in structure to how each Bitcoin block encodes its predecessor. The chain is anchored to the Bitcoin blockchain periodically.
 
 ## **7.2 The Longest Valid Chain Wins**
 
@@ -180,7 +180,7 @@ If a fork in an identity chain is detected, both chains are flagged as disputed,
 
 ## **8.1 Transitive Trust**
 
-Trust in Fractal ID is transitive but attenuated. Direct acquaintances carry more weight than friends-of-friends. The attenuation function:
+Trust in Autonym is transitive but attenuated. Direct acquaintances carry more weight than friends-of-friends. The attenuation function:
 
 | trust(A ← C via B) \= trust(A ← B) × trust(B ← C) × attenuation\_factor |
 | :---- |
@@ -199,7 +199,7 @@ Where attenuation\_factor \< 1 for each hop. Trust beyond 3-4 hops becomes negli
 
 ## **9.1 Resistance Through Cost**
 
-A Sybil attack is the creation of many fake identities by a single adversary to gain disproportionate influence. Fractal ID resists Sybil attacks through cost, not central authority. Creating a Fractal ID that meets meaningful confidence thresholds requires:
+A Sybil attack is the creation of many fake identities by a single adversary to gain disproportionate influence. Autonym resists Sybil attacks through cost, not central authority. Creating a Autonym that meets meaningful confidence thresholds requires:
 
 * Continuous device operation over months or years (behavioral continuity)
 
@@ -213,19 +213,19 @@ Each has a real cost. Multiplying by the number of fake identities needed to mea
 
 ## **9.2 The Dynamic Key Property**
 
-A citizen's Fractal ID private key is dynamic — it evolves continuously based on behavioral continuity inputs. Even if an adversary obtains a point-in-time copy of a citizen's key material, that material becomes stale quickly. The legitimate citizen's continuously evolving key diverges from the stolen snapshot. Making long-term impersonation effectively impossible without being the legitimate citizen.
+A citizen's Autonym private key is dynamic — it evolves continuously based on behavioral continuity inputs. Even if an adversary obtains a point-in-time copy of a citizen's key material, that material becomes stale quickly. The legitimate citizen's continuously evolving key diverges from the stolen snapshot. Making long-term impersonation effectively impossible without being the legitimate citizen.
 
 # **10\. Kudzu Integration: Persistent Associative Memory**
 
 ## **10.1 Why Identity Needs Memory**
 
-A static identity document does not learn. A Fractal ID, by contrast, is a living record that accumulates context over time. The Kudzu biomimetic memory system provides the storage and retrieval substrate for this accumulation.
+A static identity document does not learn. A Autonym, by contrast, is a living record that accumulates context over time. The Kudzu biomimetic memory system provides the storage and retrieval substrate for this accumulation.
 
-Kudzu's holographic reduced representation (HRR) architecture — 512-dimensional vectors binding role-filler pairs through circular convolution — allows a Fractal ID's contextual associations to be stored efficiently and retrieved associatively. The identity does not merely know facts about the citizen; it knows relationships between facts.
+Kudzu's holographic reduced representation (HRR) architecture — 512-dimensional vectors binding role-filler pairs through circular convolution — allows a Autonym's contextual associations to be stored efficiently and retrieved associatively. The identity does not merely know facts about the citizen; it knows relationships between facts.
 
 ## **10.2 Kudzu as Identity Memory Layer**
 
-In the Fractal ID architecture, a Kudzu hologram acts as the citizen's identity memory agent. It accumulates traces of interactions and attestations with salience scores based on novelty, recency, frequency, and associative strength. 10-minute light cycles process new traces; 6-hour deep cycles rebuild consolidated vectors. Semantic retrieval improves autonomously as the co-occurrence matrix fills in over time.
+In the Autonym architecture, a Kudzu hologram acts as the citizen's identity memory agent. It accumulates traces of interactions and attestations with salience scores based on novelty, recency, frequency, and associative strength. 10-minute light cycles process new traces; 6-hour deep cycles rebuild consolidated vectors. Semantic retrieval improves autonomously as the co-occurrence matrix fills in over time.
 
 ## **10.3 The Self-Sovereign Memory Property**
 
@@ -235,19 +235,19 @@ Because Kudzu requires no external API dependencies — all computation runs in 
 
 ## **11.1 The Parallel System Strategy**
 
-Fractal ID does not require the dismantling of legacy identity infrastructure. It is deployed in parallel with existing systems and improves over time as more citizens join and more attestations accumulate. This is the core Mesh Republic principle: the new system emerges from within the legacy system, benefiting from it while gradually replacing it.
+Autonym does not require the dismantling of legacy identity infrastructure. It is deployed in parallel with existing systems and improves over time as more citizens join and more attestations accumulate. This is the core Mesh Republic principle: the new system emerges from within the legacy system, benefiting from it while gradually replacing it.
 
 ## **11.2 Legacy Records as Bootstrap Inputs**
 
-When a new citizen registers a Fractal ID, they can strengthen their initial chain by importing verifiable attestations from legacy systems: government ID cryptographic hash, utility account verification, employment verification, financial institution attestation, and professional licensing. Each legacy institution participates as a corporate CA — attesting to facts they already verify — without changing their existing operations.
+When a new citizen registers a Autonym, they can strengthen their initial chain by importing verifiable attestations from legacy systems: government ID cryptographic hash, utility account verification, employment verification, financial institution attestation, and professional licensing. Each legacy institution participates as a corporate CA — attesting to facts they already verify — without changing their existing operations.
 
 ## **11.3 The DMV Beachhead Strategy**
 
-The optimal entry point for Fractal ID is the identity verification function currently performed by DMVs and passport agencies. These institutions already perform the verification work. Fractal ID proposes that they additionally issue a cryptographic attestation when they perform their existing verification. This costs the DMV almost nothing. It adds a strong bootstrap attestation to every citizen who interacts with government identity systems.
+The optimal entry point for Autonym is the identity verification function currently performed by DMVs and passport agencies. These institutions already perform the verification work. Autonym proposes that they additionally issue a cryptographic attestation when they perform their existing verification. This costs the DMV almost nothing. It adds a strong bootstrap attestation to every citizen who interacts with government identity systems.
 
 ## **11.4 The Surveillance Infrastructure Judo**
 
-Legacy surveillance infrastructure — the extensive data collection apparatus of commercial entities, financial institutions, and government agencies — becomes a source of identity strength rather than a threat. A citizen who has years of utility payments, tax records, and financial transactions has strong economic presence evidence available to bootstrap their Fractal ID. The judo principle: use the adversary's strength against them.
+Legacy surveillance infrastructure — the extensive data collection apparatus of commercial entities, financial institutions, and government agencies — becomes a source of identity strength rather than a threat. A citizen who has years of utility payments, tax records, and financial transactions has strong economic presence evidence available to bootstrap their Autonym. The judo principle: use the adversary's strength against them.
 
 # **12\. Edge Cases and Inclusion**
 
@@ -257,17 +257,17 @@ New arrivals use bootstrap threads from their country of origin — foreign gove
 
 ## **12.2 Domestic Abuse Survivors and Witnesses**
 
-Individuals who need to sever their visible identity can establish a new Fractal ID with a fresh genesis block, seeded by trusted attestors who have verified their circumstances. The old chain does not automatically transfer, protecting the citizen from being located through their identity history.
+Individuals who need to sever their visible identity can establish a new Autonym with a fresh genesis block, seeded by trusted attestors who have verified their circumstances. The old chain does not automatically transfer, protecting the citizen from being located through their identity history.
 
 ## **12.3 Whistleblowers**
 
-The ZKP layer handles this directly: proof of personhood without identity revelation. A whistleblower can prove they have a deep, legitimate Fractal ID — demonstrating they are not a bot, not a foreign agent, not a synthetic identity — without revealing who they are.
+The ZKP layer handles this directly: proof of personhood without identity revelation. A whistleblower can prove they have a deep, legitimate Autonym — demonstrating they are not a bot, not a foreign agent, not a synthetic identity — without revealing who they are.
 
 # **13\. Bitcoin Anchoring**
 
-Fractal ID identity chains require periodic anchoring to an immutable external timestamp source to prevent retroactive chain construction. Bitcoin provides the most secure available immutable timestamp through its proof-of-work chain.
+Autonym identity chains require periodic anchoring to an immutable external timestamp source to prevent retroactive chain construction. Bitcoin provides the most secure available immutable timestamp through its proof-of-work chain.
 
-The Fractal ID system uses Bitcoin's OP\_RETURN opcode to embed identity chain root hashes in Bitcoin transactions at periodic intervals. Identity chains are anchored at genesis, annually at minimum, at significant attestation milestones, and on demand for high-stakes applications.
+The Autonym system uses Bitcoin's OP\_RETURN opcode to embed identity chain root hashes in Bitcoin transactions at periodic intervals. Identity chains are anchored at genesis, annually at minimum, at significant attestation milestones, and on demand for high-stakes applications.
 
 Bitcoin anchoring fees create a cost per identity that is small for legitimate citizens but significant at the scale required for a meaningful Sybil attack. This is the same economic deterrence principle as Bitcoin's own Sybil resistance.
 
@@ -275,7 +275,7 @@ Bitcoin anchoring fees create a cost per identity that is small for legitimate c
 
 ## **14.1 The Constitutional Layer**
 
-Fractal ID operates within the Mesh Republic's constitutional AI framework. Identity holograms are governed by constitutional constraints they cannot override:
+Autonym operates within the Mesh Republic's constitutional AI framework. Identity holograms are governed by constitutional constraints they cannot override:
 
 * **Non-surveillance:** An identity hologram cannot report a citizen's activities to any external party without explicit citizen authorization
 
@@ -285,13 +285,13 @@ Fractal ID operates within the Mesh Republic's constitutional AI framework. Iden
 
 * **Portability:** A citizen can always export their complete identity chain and migrate it to a different implementation
 
-## **14.2 Fractal ID in Mesh Republic Governance**
+## **14.2 Autonym in Mesh Republic Governance**
 
-Fractal ID provides the Sybil-resistant personhood layer that makes one-person-one-vote governance meaningful. Without strong identity, any voting system is vulnerable to identity multiplication attacks. Fractal ID enables weighted governance participation proportional to identity depth, quadratic voting with Sybil resistance, and auditable delegation through the relationship graph.
+Autonym provides the Sybil-resistant personhood layer that makes one-person-one-vote governance meaningful. Without strong identity, any voting system is vulnerable to identity multiplication attacks. Autonym enables weighted governance participation proportional to identity depth, quadratic voting with Sybil resistance, and auditable delegation through the relationship graph.
 
 # **15\. Comparison to Existing Systems**
 
-| Property | Government ID | Fractal ID |
+| Property | Government ID | Autonym |
 | :---- | :---- | :---- |
 | **Trust direction** | Top-down (state grants) | Bottom-up (community validates) |
 | **Single point of failure** | Yes (government revocation) | No (distributed threads) |
@@ -301,7 +301,7 @@ Fractal ID provides the Sybil-resistant personhood layer that makes one-person-o
 | **Self-improving** | No | Yes (accumulates depth) |
 | **Sybil resistant** | Yes (centrally enforced) | Yes (cost-based) |
 
-Existing Self-Sovereign Identity (SSI) proposals such as DID and Verifiable Credentials are philosophically aligned but typically lack continuous behavioral continuity threads, longest chain consensus for dispute resolution, integrated biomimetic memory through Kudzu, and a concrete bootstrapping strategy from legacy systems. Fractal ID can interoperate with DID/VC systems at the legacy bridge layer, treating Verifiable Credentials as one more validation thread.
+Existing Self-Sovereign Identity (SSI) proposals such as DID and Verifiable Credentials are philosophically aligned but typically lack continuous behavioral continuity threads, longest chain consensus for dispute resolution, integrated biomimetic memory through Kudzu, and a concrete bootstrapping strategy from legacy systems. Autonym can interoperate with DID/VC systems at the legacy bridge layer, treating Verifiable Credentials as one more validation thread.
 
 # **16\. Implementation Roadmap**
 
@@ -316,11 +316,11 @@ Existing Self-Sovereign Identity (SSI) proposals such as DID and Verifiable Cred
 
 The central authority model of identity has served a useful purpose in a world where strangers needed to trust each other quickly and organic trust networks did not exist across large distances. But it solved the coordination problem by creating a single point of failure and a single point of control — and those structural vulnerabilities are now being exploited routinely by state and corporate actors against the citizens they were meant to serve.
 
-Fractal ID does not require the legacy system to fail before it can work. It requires only that a critical mass of citizens begin building their identity ropes — accumulating threads, making attestations, establishing behavioral continuity — in parallel with their legacy documents. Over time, the rope becomes stronger than the document. At that point, the document becomes redundant not because anyone took it away, but because it was outcompeted.
+Autonym does not require the legacy system to fail before it can work. It requires only that a critical mass of citizens begin building their identity ropes — accumulating threads, making attestations, establishing behavioral continuity — in parallel with their legacy documents. Over time, the rope becomes stronger than the document. At that point, the document becomes redundant not because anyone took it away, but because it was outcompeted.
 
 This is how the Mesh Republic spreads: not through revolution, but through demonstrated superiority. Like mycelium, like Linux, like Bitcoin — one community at a time, one service at a time, until the day arrives when the legacy system must interoperate with the new one rather than the other way around.
 
-***Identity is not a document. It is a pattern. Fractal ID makes the pattern sovereign.***
+***Identity is not a document. It is a pattern. Autonym makes the pattern sovereign.***
 
 # **Appendix A: Cryptographic Primitives**
 
@@ -352,10 +352,10 @@ Initial suggested weights (subject to empirical calibration through deployment):
 
 # **Appendix C: Relation to The Mesh Republic Whitepaper**
 
-Fractal ID is a component of the larger Mesh Republic framework. The full framework specification — including the Layer 2 Bitcoin governance token, Kudzu biomimetic constitutional AI, Antitrust 2.0 enforcement mechanisms, and philosophical foundations — is available at:
+Autonym is a component of the larger Mesh Republic framework. The full framework specification — including the Layer 2 Bitcoin governance token, Kudzu biomimetic constitutional AI, Antitrust 2.0 enforcement mechanisms, and philosophical foundations — is available at:
 
 **github.com/mesh-republic/whitepaper**
 
-Fractal ID can be deployed independently of the full Mesh Republic framework. It requires only Bitcoin for anchoring and a compatible Kudzu instance for memory. Full governance integration requires the Mesh Republic governance token layer.
+Autonym can be deployed independently of the full Mesh Republic framework. It requires only Bitcoin for anchoring and a compatible Kudzu instance for memory. Full governance integration requires the Mesh Republic governance token layer.
 
 *This document is a living specification. Contributions, critiques, and implementations are welcome under the terms of the AGPL-3.0 license.*
