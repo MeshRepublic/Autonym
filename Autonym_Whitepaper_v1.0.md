@@ -12,7 +12,7 @@ Primary Author: Lee Hansen
 
 License: GNU Affero General Public License v3.0 (AGPL-3.0)
 
-Repository: github.com/mesh-republic/fractal-id
+Repository: github.com/MeshRepublic/autonym
 
 Parent Project: The Mesh Republic, github.com/meshrepublic/mesh-republic-whitepaper
 
@@ -69,7 +69,7 @@ A citizen can prove the existence and strength of their identity without reveali
 
 **2.5 Legacy Systems Are Inputs, Not Authorities**
 
-Existing record infrastructure, government databases, utility records, employment verification, financial history, is treated as evidence that can strengthen a Autonym but cannot constitute or negate one. The legacy system contributes to the rope; it does not hold the scissors.
+Existing record infrastructure, government databases, utility records, employment verification, financial history, is treated as evidence that can strengthen an Autonym but cannot constitute or negate one. The legacy system contributes to the rope; it does not hold the scissors.
 
 **2.6 The System Emerges from Within**
 
@@ -77,7 +77,7 @@ Autonym does not require the legacy system to be dismantled before it can functi
 
 # **3\. Architecture Overview**
 
-A Autonym consists of four layers:
+An Autonym consists of four layers:
 
 | ┌──────────────────────────────────────────────────┐ │  LAYER 4: ZERO-KNOWLEDGE PROOF PRESENTATION             │ │  Prove identity strength without revealing contents      │ ├──────────────────────────────────────────────────┤ │  LAYER 3: IDENTITY CHAIN                                │ │  Chronological hash chain of attestations               │ │  Anchored to Bitcoin blockchain                          │ ├──────────────────────────────────────────────────┤ │  LAYER 2: TRUST GRAPH                                   │ │  Weighted graph of mutual attestations                   │ │  Propagates through social network                       │ ├──────────────────────────────────────────────────┤ │  LAYER 1: VALIDATION THREADS                            │ │  Individual evidence streams: behavioral, relational,    │ │  economic, institutional, biometric                      │ └──────────────────────────────────────────────────┘ |
 | :---- |
@@ -94,7 +94,7 @@ The behavioral proof answers: "Is this the same continuous individual who has be
 
 ## **4.2 Legacy Document Thread**
 
-Government-issued identity documents contribute to a Autonym as evidence, not authority. The document attests that at some point, a government institution believed this person existed with these attributes. Legacy documents are strong bootstrap evidence but weak ongoing evidence. They can be forged, stolen, or revoked. Their contribution to the identity rope decreases over time relative to threads that generate continuous evidence.
+Government-issued identity documents contribute to an Autonym as evidence, not authority. The document attests that at some point, a government institution believed this person existed with these attributes. Legacy documents are strong bootstrap evidence but weak ongoing evidence. They can be forged, stolen, or revoked. Their contribution to the identity rope decreases over time relative to threads that generate continuous evidence.
 
 ## **4.3 Economic Presence Thread**
 
@@ -142,7 +142,7 @@ A citizen should be able to prove they are who they claim to be without revealin
 
 ## **6.2 What Can Be Proven Without Disclosure**
 
-Using ZKP constructions (zk-SNARKs or zk-STARKs), a Autonym holder can prove:
+Using ZKP constructions (zk-SNARKs or zk-STARKs), an Autonym holder can prove:
 
 * **Proof of personhood:** I am a unique, validated human
 
@@ -199,7 +199,7 @@ Where attenuation\_factor \< 1 for each hop. Trust beyond 3-4 hops becomes negli
 
 ## **9.1 Resistance Through Cost**
 
-A Sybil attack is the creation of many fake identities by a single adversary to gain disproportionate influence. Autonym resists Sybil attacks through cost, not central authority. Creating a Autonym that meets meaningful confidence thresholds requires:
+A Sybil attack is the creation of many fake identities by a single adversary to gain disproportionate influence. Autonym resists Sybil attacks through cost, not central authority. Creating an Autonym that meets meaningful confidence thresholds requires:
 
 * Continuous device operation over months or years (behavioral continuity)
 
@@ -249,9 +249,9 @@ Every mechanism in this paper, and every economic mechanism in the Mesh Republic
 
 ## **10.1 Why Identity Needs Memory**
 
-A static identity document does not learn. A Autonym, by contrast, is a living record that accumulates context over time. The Kudzu biomimetic memory system provides the storage and retrieval substrate for this accumulation.
+A static identity document does not learn. An Autonym, by contrast, is a living record that accumulates context over time. The Kudzu biomimetic memory system provides the storage and retrieval substrate for this accumulation.
 
-Kudzu's holographic reduced representation (HRR) architecture, 512-dimensional vectors binding role-filler pairs through circular convolution, allows a Autonym's contextual associations to be stored efficiently and retrieved associatively. The identity does not merely know facts about the citizen; it knows relationships between facts.
+Kudzu's holographic reduced representation (HRR) architecture, 512-dimensional vectors binding role-filler pairs through circular convolution, allows an Autonym's contextual associations to be stored efficiently and retrieved associatively. The identity does not merely know facts about the citizen; it knows relationships between facts.
 
 ## **10.2 Kudzu as Identity Memory Layer**
 
@@ -269,7 +269,7 @@ Autonym does not require the dismantling of legacy identity infrastructure. It i
 
 ## **11.2 Legacy Records as Bootstrap Inputs**
 
-When a new citizen registers a Autonym, they can strengthen their initial chain by importing verifiable attestations from legacy systems: government ID cryptographic hash, utility account verification, employment verification, financial institution attestation, and professional licensing. Each legacy institution participates as a corporate CA, attesting to facts they already verify, without changing their existing operations.
+When a new citizen registers an Autonym, they can strengthen their initial chain by importing verifiable attestations from legacy systems: government ID cryptographic hash, utility account verification, employment verification, financial institution attestation, and professional licensing. Each legacy institution participates as a corporate CA, attesting to facts they already verify, without changing their existing operations.
 
 ## **11.3 The DMV Beachhead Strategy**
 
